@@ -1,6 +1,8 @@
-# figma-mcp
+# figma-pi-mcp
 
 A pi extension that bridges the Figma desktop app's local MCP server into pi as native tools.
+
+> See also [figma-pi-labor](https://github.com/mkaralevich/figma-pi-labor) — reads and modifies Figma designs directly via the Plugin API.
 
 ## Requirements
 
@@ -13,7 +15,7 @@ A pi extension that bridges the Figma desktop app's local MCP server into pi as 
 Copy `index.ts` into your pi extensions directory:
 
 ```
-~/.pi/agent/extensions/figma-mcp.ts
+~/.pi/agent/extensions/figma-pi-mcp.ts
 ```
 
 ## Configuration
@@ -28,4 +30,4 @@ FIGMA_MCP_PORT=3845 pi
 
 Start pi with Figma open. The status bar shows `figma ✓` when connected.
 
-Run `/figma` to check connection status and list available tools.
+Run `/figma-mcp` to check connection status and list available tools.
