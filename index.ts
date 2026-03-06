@@ -1,12 +1,12 @@
 /**
- * Figma MCP extension for pi
+ * figma-pi-mcp — pi extension
  *
  * Bridges the Figma desktop app's local MCP server into pi as native tools.
  * Requires Figma desktop open with Dev Mode → Inspect panel → MCP server enabled.
  *
  * Server: http://127.0.0.1:3845/mcp (local only, no auth)
  * Tools are discovered dynamically from the server on session start.
- * Commands: /figma — show connection status and available tools
+ * Commands: /figma-mcp — show connection status and available tools
  */
 
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
@@ -271,7 +271,7 @@ Use these tools for **design inspection and code generation** (Dev Mode, read-on
     };
   });
 
-  pi.registerCommand("figma", {
+  pi.registerCommand("figma-mcp", {
     description: "Show Figma MCP server connection status and available tools",
     handler: async (_args, ctx) => {
       if (!connected) {
