@@ -1,4 +1,4 @@
-# figma-pi-mcp
+# pi-figma-mcp
 
 Connects [pi-coding-agent](https://github.com/badlogic/pi-mono) to local Figma desktop MCP server.
 

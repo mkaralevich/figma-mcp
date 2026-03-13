@@ -1,5 +1,5 @@
 /**
- * figma-pi-mcp — pi extension
+ * pi-figma-mcp — pi extension
  *
  * Bridges the Figma desktop app's local MCP server into pi as native tools.
  * Requires Figma desktop open with Dev Mode → Inspect panel → MCP server enabled.
