@@ -2,7 +2,7 @@
 
 # pi-figma-mcp
 
-Connects [pi-coding-agent](https://github.com/badlogic/pi-mono) to local Figma desktop MCP server.
+Connects [pi-coding-agent](https://github.com/badlogic/pi-mono) to the Figma desktop MCP server. No auth required.
 
 ## Install
 
@@ -12,22 +12,25 @@ Message `pi`:
 Install this pi-extension https://github.com/mkaralevich/pi-figma-mcp
 ```
 
-Or place extension in your `/extensions` folder
+Or place extension in your `/extensions` folder.
 
 ## Use
 
-- Open Figma desktop app (not the browser version)
-- Enable MCP server (Dev Mode): **Inspect panel → MCP server → Enable desktop MCP server**
-- Give pi a link to frame
+1. Open Figma desktop app
+2. Enable MCP server: **Dev Mode → Inspect panel → MCP server → Enable desktop MCP server**
+3. Footer shows `figma ✓` when connected
+4. Give pi a link to a frame or select a node in Figma
 
 ## Configuration
 
-The MCP server port defaults to `3845`. Override with an env var if needed:
-
 ```sh
-FIGMA_MCP_PORT=3845 pi
+FIGMA_MCP_PORT=3845 pi   # default port, override if needed
 ```
 
-## Editing Figma canvas
+## Remote MCP
 
-Figma MCP is read-only. For editing tools, install [pi-figma-labor](https://github.com/mkaralevich/pi-figma-labor) extension.
+For remote-only features (`generate_figma_design`, `create_new_file`) or browser-based Figma, use [pi-figma-remote-mcp](https://github.com/mkaralevich/pi-figma-remote-mcp) instead.
+
+## Canvas editing
+
+Figma MCP provides screenshots, design context, and library search. For canvas editing, install [pi-figma-labor](https://github.com/mkaralevich/pi-figma-labor) extension.
